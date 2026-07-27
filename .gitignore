@@ -1,0 +1,17 @@
+# Virtual environment
+
+# Spotify auth cache (contains your tokens)
+.cache
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Data files (don't commit raw data)
+*.csv
+*.json
+*.pth
+*.pkl
+
+# Notes
+*.md
