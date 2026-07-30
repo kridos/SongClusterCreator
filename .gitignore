@@ -12,6 +12,4 @@ __pycache__/
 *.json
 *.pth
 *.pkl
-
-# Notes
-*.md
+*.txt
