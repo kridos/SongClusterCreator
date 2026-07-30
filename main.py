@@ -138,12 +138,9 @@ knn.fit(X_k_means_scaled, label)
 
 y_pred = knn.predict(X_knn_scaled)
 
-with open('classification.txt', 'w') as file:
-  pass # The file is now empty
-
-for i in range(len(y_pred)):
-  with open("classification.txt", "a", encoding="utf-8") as f:
-    f.write(f"Classifier Predicted that {X_knn.iloc[i, 1]} by {X_knn.iloc[i, 2]} is {cluster_labels[y_pred[i]]}\n")
+with open('classification.txt', 'w', encoding='utf-8') as f:
+  for i in range(len(y_pred)):
+      f.write(f"Classifier Predicted that {X_knn.iloc[i, 1]} by {X_knn.iloc[i, 2]} is {cluster_labels[y_pred[i]]}\n")
     
 
     
